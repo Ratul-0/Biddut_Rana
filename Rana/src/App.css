@@ -81,3 +81,117 @@
 .status-box.no-power .status {
   color: #d9534f; /* লাল টেক্সট */
 }
+
+/* স্ট্যাটাস চেঞ্জ বাটন স্টাইল */
+.toggle-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.toggle-btn:hover {
+  background-color: #555;
+}
+/* ১. স্ক্রিনের ওপরের ডান কোণার ছোট এডমিন বাটন */
+.admin-gear-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  border-radius: 20px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.admin-gear-btn:hover {
+  opacity: 1;
+}
+
+/* ২. পাসওয়ার্ড পপ-আপ মোডাল স্টাইল */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 350px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.modal-content h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.password-input {
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+.error-text {
+  color: #d9534f;
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+}
+
+.modal-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.btn-save {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-cancel {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.loading-box {
+  margin: 30px auto;
+  padding: 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #555;
+}
